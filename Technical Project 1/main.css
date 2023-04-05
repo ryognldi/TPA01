@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --black-color: #333333;
+  --white-color: #ffffff;
+  --gradient-yellow: linear-gradient(83.09deg, #FAC117 6%, #F3AC0C 100%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parent {
+  display: flex;
+  background-color: var(--black-color);
+  height: 75px;
+  padding: 14px 100px;
+  color: var(--white-color);
+  gap: 100px;
+}
+
+.child-1, .child-2, .child-3 {
+  display: flex;
+}
+
+.child-1 {
+  align-items: center;
+  gap: 18px;
+}
+
+.child-1 span {
+  width: 55px;
+  height: 55px;
+  background: var(--gradient-yellow);
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.child-2 {
+  flex-grow: 2;
+}
+
+.menu {
+  display: flex;
+  gap : 60px;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  height: 80vh;
+  display: flex;
+
+}
+.container>.info{
+  border: 1px solid;
+}
